@@ -1,0 +1,29 @@
+.black {
+    background-color: black;
+    padding: 4rem;
+    color: white;
+    margin-top: auto;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.list-item {
+    border: 1px solid white;
+    border-radius: .3rem;
+    padding: .2rem;
+}
+
+.text-direction-right {
+    text-align: end;
+}
+
+.link, .link:visited {
+    text-decoration: none;
+    color: white;
+}

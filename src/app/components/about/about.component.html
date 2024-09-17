@@ -1,0 +1,30 @@
+<div>
+    <h1 class="h1-big">My Path</h1>
+    <div class="d-flex flex-direction">
+        <div class="col-md-3">
+            <h4 class="h4-big pb-2">Languages and techologies</h4>
+            <div class="d-flex align-items-center gap-1 flex-wrap">
+                <p-chip *ngFor="let chip of chips" [label]="chip.label" />
+            </div>
+        </div>
+        <div class="col-md-9">
+            <p-timeline [value]="events" align="alternate" styleClass="customized-timeline">
+                <ng-template pTemplate="marker" let-event>
+                    <span 
+                        class="circle-mark" 
+                        [style]="{ 'background-color': event.color }">
+                            <i [class]="event.icon"></i>
+                    </span>
+                </ng-template>
+                <ng-template pTemplate="content" let-event>
+                    <p-card [header]="event.status" [subheader]="event.date">
+                        <p>
+                            {{event.dscr}}
+                        </p>
+                    </p-card>
+                </ng-template>
+            </p-timeline>
+        </div>
+    </div>
+    
+</div>

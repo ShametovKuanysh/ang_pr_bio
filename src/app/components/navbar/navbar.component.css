@@ -1,0 +1,7 @@
+.p-menubar {
+    padding: 0.5rem;
+    background: var(--white) !important;
+    color: #4b5563;
+    border: 1px solid #e5e7eb;
+    border-radius: none;
+}
